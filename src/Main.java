@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
+    public void bubleSort(int[] nums, int n){
+        for(int i = 0; i < n - 1; i++){
+            for(int j = i+1; j < n; j++){
+                if(nums[j] < nums[i]){
+                    int temp = nums[j];
+                    nums[j] = nums[i];
+                    nums[i] =  temp;
+                }
+            }
+
+        }
+    }
     public static void main(String[] args){
                 
 ////        String s = "Gfg 9 + 6 = 12.0";
