@@ -13,6 +13,21 @@ public class Main {
 
         }
     }
+    public void selectionSort(int[] nums, int n){
+        for(int i = 0; i < n - 1; i++){
+            int minIndex = i;
+            for(int j = i+1; j < n ; j++){
+                if(nums[j] < nums[minIndex]){
+                    minIndex = j;
+                }
+            }
+            if(minIndex > i){
+                int temp = nums[minIndex];
+                nums[minIndex] = nums[i];
+                nums[i] = temp;
+            }
+        }
+    }
     public static void main(String[] args){
                 
 ////        String s = "Gfg 9 + 6 = 12.0";
